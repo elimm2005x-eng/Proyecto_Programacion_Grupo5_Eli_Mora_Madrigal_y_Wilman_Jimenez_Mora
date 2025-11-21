@@ -9,5 +9,13 @@ package proyecto_programacion_grupo5;
  * @author elimm
  */
 public class Empleados {
-    
+    int id;
+    String nombre;
+
+    public Empleados(int id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
 }
+    
+
