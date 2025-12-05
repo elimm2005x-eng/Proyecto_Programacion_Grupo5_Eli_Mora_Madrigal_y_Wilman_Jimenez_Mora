@@ -10,35 +10,33 @@ package proyecto_programacion_grupo5;
  */
 public class BaseDatos {
 
-    // =========================
     // EMPLEADOS PRE-CARGADOS
-    // =========================
     public static Empleados[] empleados = new Empleados[50];
     public static int totalEmpleados = 0;
 
-    // =========================
     // SALAS DE CINE
-    // =========================
     public static Cine[] salasCine = new Cine[5]; // puedes tener hasta 5 salas pero se puede aumentar para más pelis
     public static int totalSalas = 0;
+    
+    // CLASES (BAILE Y YOGA)
+    // Posición 0 = 7pm
+    // Posición 1 = 8pm
+    public static ClaseActividades[] salabaile = new ClaseActividades[2];
+    public static ClaseActividades[] salayoga = new ClaseActividades[2];
+    
 
-    // =========================
     // CARGAR TODA LA INFO INICIAL
-    // =========================
     public static void cargarDatos() {
 
         cargarEmpleados();
         cargarSalasCine();
-
+        cargarClases();
         // En el futuro:
         // cargarGym();
-        // cargarClases();
         // cargarCafeteria();
     }
 
-    // -------------------------
     // CARGA DE EMPLEADOS
-    // -------------------------
     public static void cargarEmpleados() {
 
         empleados[0] = new Empleados(101, "Dilshot");
@@ -51,9 +49,7 @@ public class BaseDatos {
         totalEmpleados = 6;
     }
 
-    // -------------------------
     // CARGA DE SALAS DE CINE
-    // -------------------------
     public static void cargarSalasCine() {
 
         // Ejemplo: 2 salas
@@ -67,6 +63,21 @@ public class BaseDatos {
 
         totalSalas = 4;
     }
+    
+    
+    // CARGA DE SALAS DE LAS CLASES DE YOGA Y BAILE
+    public static void cargarClases() {
+    // Baile 7pm y 8pm
+    salabaile[0] = new ClaseActividades("Baile", "María");
+    salabaile[1] = new ClaseActividades("Baile", "María");
+
+    // Yoga 7pm y 8pm
+    salayoga[0] = new ClaseActividades("Yoga", "Carlos");
+    salayoga[1] = new ClaseActividades("Yoga", "Carlos");
+    // 0 = 7pm
+    // 1 = 8pm
+}
+
 
     
 }

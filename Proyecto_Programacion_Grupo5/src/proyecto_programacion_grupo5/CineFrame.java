@@ -22,7 +22,6 @@ public class CineFrame extends javax.swing.JFrame {
     setTitle("Gestión de Cine");
     setLocationRelativeTo(null);
     
-    BaseDatos.cargarDatos();
     cargarComboSalas();   // Llenar salas en el combo al abrir
     
 }
@@ -50,9 +49,9 @@ public class CineFrame extends javax.swing.JFrame {
         for (int j = 0; j < sala.columnas; j++) {
             int id = sala.getID(i, j);
             if (id == 0) {
-                texto += "[  ] ";
+                texto += "   [      ]   ";
             } else {
-                texto += "[" + id + "] ";
+                texto += "   [  " + id + "  ]   ";
             }
         }
         texto += "\n";
@@ -170,7 +169,7 @@ public class CineFrame extends javax.swing.JFrame {
                     .addComponent(jButton4)
                     .addComponent(jButton5)
                     .addComponent(jButton6))
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,7 +195,7 @@ public class CineFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();

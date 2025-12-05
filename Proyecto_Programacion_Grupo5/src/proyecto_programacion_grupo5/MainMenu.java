@@ -18,6 +18,8 @@ public class MainMenu extends javax.swing.JFrame {
         jButton4.addActionListener(e -> abrirCafeteria());
         jButton5.addActionListener(e -> abrirEmpleados());
         jButton6.addActionListener(e -> salir());
+        
+        
     }
     
     //Son los metodos para abrir cada subMenu de las clases
@@ -26,7 +28,10 @@ public class MainMenu extends javax.swing.JFrame {
     } 
     private void abrirGym() { System.out.println("Abrir gym..."); 
     }
-    private void abrirClases() { System.out.println("Abrir clases..."); 
+    private void abrirClases() { 
+        ClasesFrame clases = new ClasesFrame();
+        clases.setVisible(true);
+        this.dispose(); // opcional, si querés cerrar el menú al entrar 
     }
     private void abrirCafeteria() { System.out.println("Abrir cafetería..."); 
     }
@@ -126,6 +131,7 @@ public class MainMenu extends javax.swing.JFrame {
         }
 
         java.awt.EventQueue.invokeLater(() -> new MainMenu().setVisible(true));
+        BaseDatos.cargarDatos();
     }
 
 
