@@ -37,7 +37,13 @@ public class MainMenu extends javax.swing.JFrame {
         clases.setVisible(true);
         this.dispose(); // opcional, si querés cerrar el menú al entrar 
     }
-    private void abrirCafeteria() { System.out.println("Abrir cafetería..."); 
+    private void abrirCafeteria() { 
+        CafeteriaFrame cafeteria = new CafeteriaFrame();
+        cafeteria.setVisible(true);
+        cafeteria.setLocationRelativeTo(null);
+        this.setVisible(false);
+        
+    
     }
     private void abrirEmpleados() { System.out.println("Abrir empleados..."); 
     }
@@ -60,6 +66,11 @@ public class MainMenu extends javax.swing.JFrame {
 
         jButton1.setText("Cine");
         jButton1.setActionCommand("BtnCine");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Gimnasio");
         jButton2.setActionCommand("BtnGym");
@@ -116,6 +127,10 @@ public class MainMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
     
     
     /**

@@ -26,6 +26,11 @@ public class BaseDatos {
     //GIMNASIO
     public static Gimnasio gimnasio;
 
+    
+    
+    
+    public static Cafeteria[] reservas = new Cafeteria[6];
+    
 
     // CARGAR TODA LA INFO INICIAL
     public static void cargarDatos() {
@@ -35,6 +40,9 @@ public class BaseDatos {
         cargarClases();
         cargarGimnasio();
 
+        
+        
+        // cargarGym();
         // cargarCafeteria();
     }
 
@@ -93,6 +101,12 @@ public class BaseDatos {
         return "Desconocido";
     }
 
+    public static void reservarBebidas(Cafeteria[] reservas,String nombre, String bebida, String hora,int posicion){
+         
+        reservas[posicion]=new Cafeteria(nombre, bebida, hora);
+        
+        
+    }
 
 
     
