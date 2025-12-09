@@ -23,10 +23,14 @@ public class MainMenu extends javax.swing.JFrame {
     }
     
     //Son los metodos para abrir cada subMenu de las clases
-    private void abrirCine() { CineFrame cine = new CineFrame();
-    cine.setVisible(true);
+    private void abrirCine() { 
+        CineFrame cine = new CineFrame();
+        cine.setVisible(true);
+        this.dispose();
     } 
-    private void abrirGym() { System.out.println("Abrir gym..."); 
+    private void abrirGym() { 
+        new GimnasioFrame().setVisible(true);
+        this.dispose();
     }
     private void abrirClases() { 
         ClasesFrame clases = new ClasesFrame();

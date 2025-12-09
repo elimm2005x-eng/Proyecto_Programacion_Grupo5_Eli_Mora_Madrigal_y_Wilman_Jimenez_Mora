@@ -23,7 +23,9 @@ public class BaseDatos {
     // Posición 1 = 8pm
     public static ClaseActividades[] salabaile = new ClaseActividades[2];
     public static ClaseActividades[] salayoga = new ClaseActividades[2];
-    
+    //GIMNASIO
+    public static Gimnasio gimnasio;
+
 
     // CARGAR TODA LA INFO INICIAL
     public static void cargarDatos() {
@@ -31,8 +33,8 @@ public class BaseDatos {
         cargarEmpleados();
         cargarSalasCine();
         cargarClases();
-        // En el futuro:
-        // cargarGym();
+        cargarGimnasio();
+
         // cargarCafeteria();
     }
 
@@ -77,6 +79,20 @@ public class BaseDatos {
     // 0 = 7pm
     // 1 = 8pm
 }
+    
+    public static void cargarGimnasio() {
+    gimnasio = new Gimnasio("Entrenador Luis"); 
+}
+    //Este metodo va a buscar el nombre del empleado por medio de la ID para el gimnasio
+    public static String buscarNombre(int id) {
+        for (int i = 0; i < totalEmpleados; i++) {
+            if (empleados[i].id == id) {
+                return empleados[i].nombre;
+            }
+        }
+        return "Desconocido";
+    }
+
 
 
     

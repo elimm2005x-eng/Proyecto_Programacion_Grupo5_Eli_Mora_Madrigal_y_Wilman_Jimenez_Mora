@@ -38,7 +38,7 @@ public class Cine {
         this.pelicula = nueva;
     }
 
-    // Cambiar tamaño de sala (se crea una nueva matriz)
+    // Cambiar tamaño de sala, esto hace que se reinicie la sala y no guarde los campos
     public void setTamaño(int nuevasFilas, int nuevasColumnas) {
 
         this.filas = nuevasFilas;
