@@ -2,11 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
         <group>
-            <file>file:/C:/Users/Wilman/Documents/proyecto2/Proyecto_Programacion_Grupo5/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/CafeteriaFrame.java</file>
-            <file>file:/C:/Users/Wilman/Documents/proyecto2/Proyecto_Programacion_Grupo5/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/MainMenu.java</file>
-            <file>file:/C:/Users/Wilman/Documents/proyecto2/Proyecto_Programacion_Grupo5/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/BaseDatos.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/GimnasioFrame.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/MainMenu.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/Historial.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/BaseDatos.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/Cine.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/ClaseActividades.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/Empleados.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/Gimnasio.java</file>
+        </group>
+        <group>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/MainMenu.java</file>
+            <file>file:/C:/Users/elimm/OneDrive/Documents/NetBeansProjects/Proyecto_Programacion_Grupo5Completado/Proyecto_Programacion_Grupo5/src/proyecto_programacion_grupo5/CafeteriaFrame.java</file>
         </group>
     </open-files>
 </project-private>

@@ -19,16 +19,15 @@ public class BaseDatos {
     public static int totalSalas = 0;
     
     // CLASES (BAILE Y YOGA)
-    // Posición 0 = 7pm
-    // Posición 1 = 8pm
     public static ClaseActividades[] salabaile = new ClaseActividades[2];
     public static ClaseActividades[] salayoga = new ClaseActividades[2];
+    
     //GIMNASIO
     public static Gimnasio gimnasio;
 
     
     
-    
+    //Cafeteria
     public static Cafeteria[] reservas = new Cafeteria[6];
     
 
@@ -40,10 +39,6 @@ public class BaseDatos {
         cargarClases();
         cargarGimnasio();
 
-        
-        
-        // cargarGym();
-        // cargarCafeteria();
     }
 
     // CARGA DE EMPLEADOS
@@ -63,14 +58,14 @@ public class BaseDatos {
     public static void cargarSalasCine() {
 
         // Ejemplo: 2 salas
-        // Sala 1 → 30 espacios (5x6)
+        // Sala 1 = 30 espacios (5x6)
         salasCine[0] = new Cine("Avengers", 5, 6);
         salasCine[1] = new Cine("Interestelar", 5, 6);
 
-        // Sala 2 → 25 espacios (5x5)
+        // Sala 2 = 25 espacios (5x5)
         salasCine[2] = new Cine("Avatar", 5, 5);
         salasCine[3] = new Cine("El Conjuro", 5, 5);
-
+        //se pueden aumentar
         totalSalas = 4;
     }
     
@@ -100,7 +95,7 @@ public class BaseDatos {
         }
         return "Desconocido";
     }
-
+    //reserva bebidas para los empleados
     public static void reservarBebidas(Cafeteria[] reservas,String nombre, String bebida, String hora,int posicion){
          
         reservas[posicion]=new Cafeteria(nombre, bebida, hora);
